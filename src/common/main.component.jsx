@@ -10,15 +10,15 @@ class Main extends Component {
                             <a className="navbar-brand" href="#">Scotch Cars</a>
                         </div>
                         <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul className="nav navbar-nav">
-                                <li className="active"><a href="#">Link <span className="sr-only">(current)</span></a></li>
-                                <li><a href="#">Link</a></li>
+                            <ul className="nav navbar-nav"> 
+                                <li><Link to="/" activeClassName="active">Home</Link></li>
+                                <li><Link to="/cars" activeClassName="active">Cars</Link></li>
+                                <li><Link to="/about" activeClassName="active">About</Link></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
                 <div className="container">
-                    
                     {this.props.children}
                 </div>
             </div>
